@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Atomic Host Latest | Using OSTree | Examine Your System | Browsing History</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+  <script src="../../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+
+  <meta content="AsciiBinder" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://www.projectatomic.io/"><img alt="ProjectAtomic" src="../../../latest/_images/project_atomic_horizontal_logo.png" height="100"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../../index.html">Atomic Host Documentation</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../../welcome/index.html">Atomic Host Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        Using OSTree
+      </li>
+      <li class="hidden-xs active"><a href="../../using_ostree/examine_system/current_ref.html">Examine Your System</a></li>
+      <li class="hidden-xs active">
+        Browsing History
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-right"></span>About
+      </a>
+      <ul id="topicGroup0" class="collapse  list-unstyled">
+            <li><a class="" href="../../welcome/index.html">Welcome</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-right"></span>Introduction
+      </a>
+      <ul id="topicGroup1" class="collapse  list-unstyled">
+            <li><a class="" href="../../introduction/goals.html">Goals of Atomic Host</a></li>
+            <li><a class="" href="../../introduction/revolution.html">How Atomic Host Revolutionizes OSes</a></li>
+            <li><a class="" href="../../introduction/rpm_to_layers.html">From RPMs to Layers</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup2">
+        <span id="tgSpan2" class="fa fa-angle-right"></span>Installation
+      </a>
+      <ul id="topicGroup2" class="collapse  list-unstyled">
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-2-0">
+                <span id="sgSpan-2-0" class="fa fa-caret-right"></span>&nbsp;Vagrant
+              </a>
+              <ul id="topicSubGroup-2-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../installation/vagrant/vagrant.html">Installation</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-2-1">
+                <span id="sgSpan-2-1" class="fa fa-caret-right"></span>&nbsp;Public Cloud
+              </a>
+              <ul id="topicSubGroup-2-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../installation/public_cloud/cloud_init.html">cloud-init</a></li>
+
+                  <li><a class="" href="../../installation/public_cloud/aws.html">AWS</a></li>
+
+                  <li><a class="" href="../../installation/public_cloud/digital_ocean.html">Digital Ocean</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-2-2">
+                <span id="sgSpan-2-2" class="fa fa-caret-right"></span>&nbsp;Bare Metal
+              </a>
+              <ul id="topicSubGroup-2-2" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../installation/bare_metal/interactive_install.html">Interactive Installation</a></li>
+
+                  <li><a class="" href="../../installation/bare_metal/kickstarts.html">Automated Install with Kickstarts</a></li>
+
+                  <li><a class="" href="../../installation/bare_metal/manage_storage.html">Manage Storage</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-2-3">
+                <span id="sgSpan-2-3" class="fa fa-caret-right"></span>&nbsp;Openstack
+              </a>
+              <ul id="topicSubGroup-2-3" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../installation/openstack/magnum.html">Magnum</a></li>
+              </ul>
+            </li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup3">
+        <span id="tgSpan3" class="fa fa-angle-right"></span>Quick Start
+      </a>
+      <ul id="topicGroup3" class="collapse  list-unstyled">
+            <li><a class="" href="../../quick_start/developer_mode.html">Developer Mode</a></li>
+            <li><a class="" href="../../quick_start/container_cluster.html">Container Cluster Quickstarts</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup4">
+        <span id="tgSpan4" class="fa fa-angle-right"></span>Cluster Setup
+      </a>
+      <ul id="topicGroup4" class="collapse  list-unstyled">
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-4-0">
+                <span id="sgSpan-4-0" class="fa fa-caret-right"></span>&nbsp;Vagrant
+              </a>
+              <ul id="topicSubGroup-4-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../cluster_setup/vagrant/single_node.html">Single-Node Vagrant Example</a></li>
+
+                  <li><a class="" href="../../cluster_setup/vagrant/multi_node.html">Multi-Node Vagrant Example</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-4-1">
+                <span id="sgSpan-4-1" class="fa fa-caret-right"></span>&nbsp;Openshift Origin
+              </a>
+              <ul id="topicSubGroup-4-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../cluster_setup/openshift_origin/oc_cluster.html">OC Cluster Up</a></li>
+
+                  <li><a class="" href="../../cluster_setup/openshift_origin/openshift_ansible.html">Openshift Ansible</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-4-2">
+                <span id="sgSpan-4-2" class="fa fa-caret-right"></span>&nbsp;Kubernetes
+              </a>
+              <ul id="topicSubGroup-4-2" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../cluster_setup/kubernetes/kubeadm.html">Kubeadm</a></li>
+
+                  <li><a class="" href="../../cluster_setup/kubernetes/kubernetes_ansible.html">Kubernetes Ansible</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-4-3">
+                <span id="sgSpan-4-3" class="fa fa-caret-right"></span>&nbsp;Others
+              </a>
+              <ul id="topicSubGroup-4-3" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../cluster_setup/others/swarm.html">Swarm</a></li>
+
+                  <li><a class="" href="../../cluster_setup/others/mesos.html">Mesos</a></li>
+              </ul>
+            </li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup5">
+        <span id="tgSpan5" class="fa fa-angle-down"></span>Using OSTree
+      </a>
+      <ul id="topicGroup5" class="collapse in list-unstyled">
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-5-0">
+                <span id="sgSpan-5-0" class="fa fa-caret-down"></span>&nbsp;Examine Your System
+              </a>
+              <ul id="topicSubGroup-5-0" class="nav-tertiary list-unstyled collapse in">
+
+                  <li><a class="" href="../../using_ostree/examine_system/current_ref.html">Checking Current Ref</a></li>
+
+                  <li><a class=" active" href="../../using_ostree/examine_system/browse_history.html">Browsing History</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-5-1">
+                <span id="sgSpan-5-1" class="fa fa-caret-right"></span>&nbsp;Updates
+              </a>
+              <ul id="topicSubGroup-5-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../using_ostree/updates/updates.html">Updates</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-5-2">
+                <span id="sgSpan-5-2" class="fa fa-caret-right"></span>&nbsp;Rebasing
+              </a>
+              <ul id="topicSubGroup-5-2" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../using_ostree/rebasing/ostree_mutation.html">OSTree Mutation</a></li>
+
+                  <li><a class="" href="../../using_ostree/rebasing/package_layering.html">Package Layering</a></li>
+
+                  <li><a class="" href="../../using_ostree/rebasing/overrides.html">Overrides</a></li>
+
+                  <li><a class="" href="../../using_ostree/rebasing/livefs.html">LiveFS</a></li>
+
+                  <li><a class="" href="../../using_ostree/rebasing/rollback.html">Rollback</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-5-3">
+                <span id="sgSpan-5-3" class="fa fa-caret-right"></span>&nbsp;Creating Own Distribution
+              </a>
+              <ul id="topicSubGroup-5-3" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../using_ostree/creating_own_distribution/ostree_compose.html">OSTree Compose</a></li>
+
+                  <li><a class="" href="../../using_ostree/creating_own_distribution/ostree_server.html">OSTree Server</a></li>
+
+                  <li><a class="" href="../../using_ostree/creating_own_distribution/automate_commit_build.html">Automated Commit Build</a></li>
+
+                  <li><a class="" href="../../using_ostree/creating_own_distribution/distribute_ostree_pulp.html">Distributing OSTree with Pulp</a></li>
+              </ul>
+            </li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup6">
+        <span id="tgSpan6" class="fa fa-angle-right"></span>Administration
+      </a>
+      <ul id="topicGroup6" class="collapse  list-unstyled">
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-0">
+                <span id="sgSpan-6-0" class="fa fa-caret-right"></span>&nbsp;Life of Atomic Sys-Admin
+              </a>
+              <ul id="topicSubGroup-6-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/system_status.html">Checking System Status in Cockpit</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/upgrades.html">Checking Upgrades</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/pushing_upgrades.html">Pushing Upgrades to Servers</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/rollback_server.html">Rolling Back Servers with Issues</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/test_software.html">Testing Software with Overrides</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/add_storage.html">Adding Storage</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/install_system_containers.html">Installing System Containers</a></li>
+
+                  <li><a class="" href="../../administration/atomic_sysadmin/deploy_cluster_nodes.html">Deploy New Cluster Nodes</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-1">
+                <span id="sgSpan-6-1" class="fa fa-caret-right"></span>&nbsp;Installing Software
+              </a>
+              <ul id="topicSubGroup-6-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/installing_software/skopeo.html">Containers</a></li>
+
+                  <li><a class="" href="../../administration/installing_software/system_containers.html">System Containers</a></li>
+
+                  <li><a class="" href="../../administration/installing_software/build_own_ostree.html">Build Own OSTree</a></li>
+
+                  <li><a class="" href="../../administration/installing_software/local_ostree_changes.html">Local Ostree Changes</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-2">
+                <span id="sgSpan-6-2" class="fa fa-caret-right"></span>&nbsp;Cockpit Installation
+              </a>
+              <ul id="topicSubGroup-6-2" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/cockpit_installation/installation.html">Installation</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-3">
+                <span id="sgSpan-6-3" class="fa fa-caret-right"></span>&nbsp;Administration with Cockpit
+              </a>
+              <ul id="topicSubGroup-6-3" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/administration_with_cockpit/ostree.html">OSTree</a></li>
+
+                  <li><a class="" href="../../administration/administration_with_cockpit/containers.html">Containers</a></li>
+
+                  <li><a class="" href="../../administration/administration_with_cockpit/monitoring.html">Monitoring</a></li>
+
+                  <li><a class="" href="../../administration/administration_with_cockpit/others.html">Other tasks</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-4">
+                <span id="sgSpan-6-4" class="fa fa-caret-right"></span>&nbsp;Managing Multiple Servers Cockpit
+              </a>
+              <ul id="topicSubGroup-6-4" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/manage_multiple_servers_cockpit/manage_multiple_servers.html">Manage Multiple Servers</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-6-5">
+                <span id="sgSpan-6-5" class="fa fa-caret-right"></span>&nbsp;Configuration Management
+              </a>
+              <ul id="topicSubGroup-6-5" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../administration/configuration_management/ansible.html">Ansible</a></li>
+
+                  <li><a class="" href="../../administration/configuration_management/puppet.html">Puppet</a></li>
+
+                  <li><a class="" href="../../administration/configuration_management/others.html">Others</a></li>
+              </ul>
+            </li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup7">
+        <span id="tgSpan7" class="fa fa-angle-right"></span>Atomic Tools
+      </a>
+      <ul id="topicGroup7" class="collapse  list-unstyled">
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-7-0">
+                <span id="sgSpan-7-0" class="fa fa-caret-right"></span>&nbsp;Atomic CLI
+              </a>
+              <ul id="topicSubGroup-7-0" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../atomic_tools/atomic_cli/atomic_install.html">Atomic Install</a></li>
+
+                  <li><a class="" href="../../atomic_tools/atomic_cli/atomic_host_commands.html">Atomic Host Commands</a></li>
+
+                  <li><a class="" href="../../atomic_tools/atomic_cli/image_signing_registries.html">Image Signing and Trusting Registries</a></li>
+
+                  <li><a class="" href="../../atomic_tools/atomic_cli/other_commands.html">Other Commands</a></li>
+              </ul>
+            </li>
+            <li class="nav-header">
+              <a class="" href="#" data-toggle="collapse" data-target="#topicSubGroup-7-1">
+                <span id="sgSpan-7-1" class="fa fa-caret-right"></span>&nbsp;Container Tools
+              </a>
+              <ul id="topicSubGroup-7-1" class="nav-tertiary list-unstyled collapse">
+
+                  <li><a class="" href="../../atomic_tools/container_tools/docker.html">Docker</a></li>
+
+                  <li><a class="" href="../../atomic_tools/container_tools/crio.html">CRI-O</a></li>
+
+                  <li><a class="" href="../../atomic_tools/container_tools/registry.html">Registry</a></li>
+
+                  <li><a class="" href="../../atomic_tools/container_tools/skopeo.html">Skopeo</a></li>
+
+                  <li><a class="" href="../../atomic_tools/container_tools/buildah.html">Buildah</a></li>
+              </ul>
+            </li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup8">
+        <span id="tgSpan8" class="fa fa-angle-right"></span>Cookbook
+      </a>
+      <ul id="topicGroup8" class="collapse  list-unstyled">
+            <li><a class="" href="../../cookbook/setup_own_ostree_server.html">Setting up Your Own Hosted OSTree Server</a></li>
+            <li><a class="" href="../../cookbook/caching_image.html">Caching Images Using a Private Registry</a></li>
+            <li><a class="" href="../../cookbook/upgrade_atomic.html">Upgrade from Fedora25 Atomic to Fedora26 Atomic</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup9">
+        <span id="tgSpan9" class="fa fa-angle-right"></span>References
+      </a>
+      <ul id="topicGroup9" class="collapse  list-unstyled">
+            <li><a class="" href="../../references/selinux_containers_troubleshooting.html">SELinux and Containers</a></li>
+            <li><a class="" href="../../references/rpm_ostree_command_ref.html">RPM-OSTree Command Reference</a></li>
+            <li><a class="" href="../../references/atomic_cli_command_ref.html">Atomic CLI Command Reference</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup10">
+        <span id="tgSpan10" class="fa fa-angle-right"></span>Contribute Guide
+      </a>
+      <ul id="topicGroup10" class="collapse  list-unstyled">
+            <li><a class="" href="../../contribution/contribution_guide.html">How Can I Contribute</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Browsing History</h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>
